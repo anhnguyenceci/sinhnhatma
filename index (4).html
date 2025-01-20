@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Ghi Lời Chúc</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Section */
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #ffb7b2;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+
+        /* Image Grid Section */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+
+        .image-card {
+            background: #ffdac1;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-card textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            outline: none;
+        }
+
+        .image-card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image-card button:hover {
+            background-color: #ff9aa2;
+        }
+
+        .image-card .message-display {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        footer {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #ffb7b2;
+            color: white;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Chúc Mừng Sinh Nhật!</h1>
+        <p>Nhà mình chúc má sinh nhật vui vẻ ♥ </p>
+    </header>
+
+    <!-- Image Grid Section -->
+    <section class="image-grid">
+        <!-- Card 1 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/55e472abf9fd45a31cec.jpg" alt="Placeholder 1">
+            <textarea placeholder="Con chúc má luôn luôn khỏe mạnh để luôn vui vẻ bên tụi con ♥ 
+
+~ Con gái cưng ~" id="message-1"></textarea>
+            <div class="message-display" id="display-1"></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/d2cde1d65d80e1deb891.jpg" alt="Placeholder 2">
+            <textarea placeholder="Chúc má của con luôn tươi cười, luôn hạnh phúc, luôn khỏe mạnh và luôn ở bên cạnh tụi con.
+
+~ Con trai ngoan ~" id="message-2"></textarea>
+            <div class="message-display" id="display-2"></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/29175302ef54530a0a45.jpg" alt="Placeholder 3">
+            <textarea placeholder="Con thương má nhất trên đời....
+
+~ Con gái cưng ~" id="message-3"></textarea>
+            <div class="message-display" id="display-3"></div>
+        </div>
+        <!-- Card 4 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/abbdb4420b14b74aee05.jpg" alt="Placeholder 4">
+            <textarea placeholder="Con thích cách má gói bánh, thích vị bánh mà má làm lắm.
+            
+~ Con trai ngoan ~" id="message-3"></textarea>
+            <div class="message-display" id="display-3"></div>
+        </div>
+        <!-- Card 5 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/34490ebdb1eb0db554fa.jpg" alt="Placeholder 5">
+            <textarea placeholder="Con biết nhiều lúc con ương bướng, không chịu nghe lời nhưng con hạnh phúc vì biết rằng má không mất hi vọng ở con
+
+~ Con gái cưng ~" id="message-3"></textarea>
+            <div class="message-display" id="display-3"></div>
+        </div>
+        <!-- Card 6 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/1aaac4497b1fc7419e0e.jpg" alt="Placeholder 6">
+            <textarea placeholder="Tụi con muốn làm má tự hào vì tụi con!" id="message-3"></textarea>
+            <div class="message-display" id="display-3"></div>
+        </div>
+        <!-- Card 7 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/344850a6eff053ae0ae1.jpg" alt="Placeholder 7">
+            <textarea placeholder="Nhập lời chúc cho ảnh này..." id="message-3"></textarea>
+            <div class="message-display" id="display-3"></div>
+        </div>
+        <!-- Card 8 -->
+        <div class="image-card">
+            <img src="https://assets.onecompiler.app/4344fap9e/434vf2st4/24cfa70b185da403fd4c.jpg" alt="Placeholder 8">
+            <textarea placeholder="Nhập lời chúc cho ảnh này..." id="message-3"></textarea>
+            <div class="message-display" id="display-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Ánh Nguyên - Nhà mình chúc mừng sinh nhật má 2025</p>
+    </footer>
+
+    <script>
+        // Hàm lưu lời chúc
+        function saveMessage(id) {
+            const textarea = document.getElementById(`message-${id}`);
+            const display = document.getElementById(`display-${id}`);
+            const message = textarea.value.trim();
+
+            if (message) {
+                display.innerHTML = `<strong>Lời chúc:</strong> ${message}`;
+                textarea.value = ''; // Xóa nội dung sau khi lưu
+                alert(`Lời chúc cho ảnh ${id} đã được lưu!`);
+            } else {
+                alert('Vui lòng nhập lời chúc trước khi lưu.');
+            }
+        }
+    </script>
+
+</body>
+</html>
